@@ -1,0 +1,252 @@
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+	#content .file.archive,
+	#content .file.clicked.archive.downloaded {
+		background: url('sto/icons/archive@2x.png') no-repeat;
+	}
+	#content .file.code,
+	#content .file.clicked.code.downloaded {
+		background: url('sto/icons/code@2x.png') no-repeat;
+	}
+	#content .file.image,
+	#content .file.clicked.image.downloaded {
+		background: url('sto/icons/image@2x.png') no-repeat;
+	}
+	#content .file.music,
+	#content .file.clicked.music.downloaded {
+		background: url('sto/icons/music@2x.png') no-repeat;
+	}
+	#content .file.video,
+	#content .file.clicked.video.downloaded {
+		background: url('sto/icons/video@2x.png') no-repeat;
+	}
+	#content .file.text,
+	#content .file.clicked.text.downloaded {
+		background: url('sto/icons/text@2x.png') no-repeat;
+	}
+	#content .file.clicked.archive {
+		background: rgba(255,255,255,0.2) url('sto/icons/archive@2x.png') no-repeat;
+	}
+	#content .file.clicked.code {
+		background: rgba(255,255,255,0.2) url('sto/icons/code@2x.png') no-repeat;
+	}
+	#content .file.clicked.image {
+		background: rgba(255,255,255,0.2) url('sto/icons/image@2x.png') no-repeat;
+	}
+	#content .file.clicked.music {
+		background: rgba(255,255,255,0.2) url('sto/icons/music@2x.png') no-repeat;
+	}
+	#content .file.clicked.video {
+		background: rgba(255,255,255,0.2) url('sto/icons/video@2x.png') no-repeat;
+	}
+	#content .file.clicked.text {
+		background: rgba(255,255,255,0.2) url('sto/icons/text@2x.png') no-repeat;
+	}
+}
+body {
+	margin: 0;
+	line-height: 1;
+	background: #323A45;
+}
+html {
+	overflow-x: hidden;
+}
+* {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	outline: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+#upload-button {
+	position: fixed;
+	z-index: 2;
+	top: 40px;
+	width: 64px;
+	height: 64px;
+	left: 50%;
+	margin-left: -32px;
+	background: url('sto/upload.png');
+	cursor: pointer;
+	
+	-webkit-transition: opacity .2s ease;
+	-moz-transition: opacity .2s ease;
+	-o-transition: opacity .2s ease;
+	transition: opacity .2s ease;
+	opacity: 1;
+}
+#upload-button:hover {
+	-webkit-transition: opacity .2s ease;
+	-moz-transition: opacity .2s ease;
+	-o-transition: opacity .2s ease;
+	transition: opacity .2s ease;
+	opacity: .6;
+}
+#shadow {
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.6);
+	display: none;
+	cursor: pointer;
+}
+form #fileInput {
+	display: none;
+}
+form#upload {
+	display: none;
+	position: fixed;
+	z-index: 3;
+}
+form#upload #fileButton {
+	position: fixed;
+	z-index: 3;
+	top: 50%;
+	left: 50%;
+	margin-top: -33px;
+	margin-left: -122px;
+	box-shadow: 0 0 140px 40px rgba(0,0,0,0.8);
+	border-radius: 6px;
+	height: 66px;
+	width: 244px;
+	padding: 10px;
+	cursor: pointer;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+	
+	-webkit-transition: background .2s ease;
+	-moz-transition: background .2s ease;
+	-o-transition: background .2s ease;
+	transition: background .2s ease;
+	background: #00C881;
+}
+form#upload #fileButton:hover {
+	-webkit-transition: background .2s ease;
+	-moz-transition: background .2s ease;
+	-o-transition: background .2s ease;
+	transition: background .2s ease;
+	background: #1bdc99;	
+}
+form#upload h3 {
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+	position: fixed;
+	z-index: 3;
+	top: 50%;
+	left: 50%;
+	width: 230px;
+	margin-left: -115px;
+	margin-top: 50px;
+	opacity: .8;
+}
+#loading {
+	width: 40px;
+	height: 31px;
+	position: fixed;
+	z-index: 3;
+	top: 50%;
+	left: 50%;
+	margin-left: -20px;
+	margin-top: -15.5px;
+	display: none;
+	opacity: .9;
+	background: url('sto/load.gif');
+}
+#content {
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 160px;
+}
+#content .file {
+	height: 190px;
+	width: 114px;
+	float: left;
+	margin-right: 82.5px;
+	margin-bottom: 35px;
+	position: relative;
+	z-index: 1;
+}
+#content .file.archive,
+#content .file.clicked.archive.downloaded {
+	background: url('sto/icons/archive.png') no-repeat;
+}
+#content .file.code,
+#content .file.clicked.code.downloaded {
+	background: url('sto/icons/code.png') no-repeat;
+}
+#content .file.image,
+#content .file.clicked.image.downloaded {
+	background: url('sto/icons/image.png') no-repeat;
+}
+#content .file.music,
+#content .file.clicked.music.downloaded {
+	background: url('sto/icons/music.png') no-repeat;
+}
+#content .file.video,
+#content .file.clicked.video.downloaded {
+	background: url('sto/icons/video.png') no-repeat;
+}
+#content .file.text,
+#content .file.clicked.text.downloaded {
+	background: url('sto/icons/text.png') no-repeat;
+}
+#content .file.clicked {
+	box-shadow: 0px 0px 0px 16px rgba(255,255,255,0.2);
+	border-radius: 1px;	
+}
+#content .file.clicked.archive {
+	background: rgba(255,255,255,0.2) url('sto/icons/archive.png') no-repeat;
+}
+#content .file.clicked.code {
+	background: rgba(255,255,255,0.2) url('sto/icons/code.png') no-repeat;
+}
+#content .file.clicked.image {
+	background: rgba(255,255,255,0.2) url('sto/icons/image.png') no-repeat;
+}
+#content .file.clicked.music {
+	background: rgba(255,255,255,0.2) url('sto/icons/music.png') no-repeat;
+}
+#content .file.clicked.video {
+	background: rgba(255,255,255,0.2) url('sto/icons/video.png') no-repeat;
+}
+#content .file.clicked.text {
+	background: rgba(255,255,255,0.2) url('sto/icons/text.png') no-repeat;
+}
+#content .file h2 {
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	color: #dfdfdf;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	word-wrap: break-word;
+}
+#content .file:nth-child(5n) {
+	margin-right: 0;
+}
+#content .file.downloaded,
+#content .file.clicked.downloaded {
+	box-shadow: none;
+	border-radius: none;
+}
+#content .file.downloaded h2,
+#content .file.clicked.downloaded h2 {
+	color: #EE7052;
+}
